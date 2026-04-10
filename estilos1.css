@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* CSS Document */
+*{
+	font-family: 'Arsenal', sans-serif;
+	margin: 0;
+	/*webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;*/
+}
+
+body {
+	font-family: 'Arsenal', sans-serif;
+	margin-left: 15%;
+	margin-right: 15%;
+	height: 550px;
+	/*background:   #EBF48E;*/
+	background-image: url("../imágenes/P2.jpg");
+	background-position: center;
+	background-size: 100% 100%;
+	
+}
+
+div#contenedor{
+	width: 90%;
+	display: inline;
+	position: inherit;
+	max-width: 900px;
+	min-width: 250px;
+	margin-bottom: 0px;
+	
+}
+
+div#nav{
+	
+	
+	display: flex;
+	margin-left: 160px;
+	z-index: 100;
+	font-size:14px;
+	position:fixed;
+	min-width: 250px;
+	margin-bottom: 0px;
+}
+
+
+#datos{
+	margin-top: 120px;
+	width: 700px;
+	position: inherit;
+	background-color:beige;
+}
+
+/*-------EFECTO PARA LOS IFRAME DEL CONTENIDO 2------*/
+#centro1 m2{
+	margin-left: 75px;
+	margin-right: 15px;
+}
+
+/*  EFECTO PARA EL MENÚ HORIZONTAL*/
+.navegador{
+	/*border-radius: 4%;
+	/*margin-top: 25px;
+	background:#000000;
+	padding: 1px;
+	/*position:fixed;
+	/*width:700px;*/
+	/*margin: 30px inherit;
+	
+	/*background: #E5AFB0;
+	z-index: 100;
+	box-shadow: 10px 5px 5px yellow;
+	/*box-shadow: 8px 8px 8px 8px rgba(#000000);*/
+	
+	
+	width: 50%;
+	/*margin: 20px inherit;*/
+	margin-left: 70px;
+	background:#000000;
+	/*background: #E5AFB0;*/
+	position:fixed;
+	z-index: 100;
+	box-shadow: 10px 5px 5px wait;
+	display:flex;
+	
+}
+
+.navegador ul{
+	list-style:none;
+	
+}
+
+.menu > li{
+	position:relative;
+	display:inline-block;	
+}
+
+.menu >li >a{
+	display:block;
+	padding: 12px 25px;
+	color:#FFF;
+	font-size:16px;
+	text-decoration:none;
+	
+	
+}
+.menu li a:hover{
+	color:yellow;
+	transition: all.3s;
+	
+}
+/*submenú*/
+.submenu1{
+	position:absolute;
+	background:#000000;
+	width:110%;
+	height:auto;
+	visibility:hidden;
+	opacity:0;
+	transition:opacity 1.5s;
+	
+}
+.submenu1 li a{
+	display:block;
+	padding: 15px;
+	color: #FFF;
+	text-decoration:none;
+	margin-left: -25px;
+}
+.menu li:hover .submenu1{
+	display:block;
+	visibility:visible;
+	opacity:1;
+	
+}
+/*Submenu2*/
+.submenu2{
+	position:absolute;
+	background:#000000;
+	width:120%;
+	visibility:hidden;
+	opacity:0;
+	transition:opacity 1.5s;
+	
+}
+.submenu2 li a{
+	display:block;
+	padding: 15px;
+	color: #FFF;
+	text-decoration:none;
+	margin-left: -25px;
+}
+
+.menu li:hover .submenu2{
+	display:block;
+	visibility:visible;
+	opacity:1;
+	
+}
+/*Submenu3*/
+.submenu3{
+	position:absolute;
+	background:#000000;
+	width:60%;
+	visibility:hidden;
+	opacity:0;
+	transition:opacity 1.5s;
+	
+}
+.submenu3 li a{
+	display:block;
+	padding: 15px;
+	color: #FFF;
+	text-decoration:none;
+	margin-left: -25px;
+}
+
+.menu li:hover .submenu3{
+	display:block;
+	visibility:visible;
+	opacity:1;
+	
+}
+/*Submenu3*/
+.submenu4{
+	position:absolute;
+	background:#000000;
+	width:110%;
+	visibility:hidden;
+	opacity:0;
+	transition:opacity 1.5s;
+	
+}
+.submenu4 li a{
+	display:block;
+	padding: 15px;
+	color: #FFF;
+	text-decoration:none;
+	margin-left: -25px;
+}
+
+.menu li:hover .submenu4{
+	display:block;
+	visibility:visible;
+	opacity:1;
+	
+}
+
+/*-----------Btn group-------*/
+.btn-grou{
+	background-color:aliceblue;
+	z-index: 100;
+	height: 400px;
+}
+
+/*---------BOTÓN QUE BRILLA---------*/
+
+/*
+.btn-neo{
+  text-emphasis:2;
+  text-emphasis-color: aqua;
+  /*font-size:50px;
+  color:white;*/
+  /*text-shadow: 3px  0px 0px black,
+               0px  3px 0px black,
+              -3px  0px 0px black,
+               0px -3px 0px black;
+}
+
+.btn-neo:hover{
+	background: #95E4F4;
+	box-shadow: 0 0 10px #95E4F4, 0 0 40px #95E4F4, 0 0 80px #95E4F4;
+	transition-delay: 0.1s;
+	
+}
+
+.btn-neo span{
+	position: absolute;
+	display: block;
+}
+
+#span1{
+	top: 0;
+	left: -100;
+	width: 100;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#95E4F4);
+}
+
+.btn-neo:hover #span1{
+	left: 100;
+	transition: 1s;
+}
+
+#span3{
+	bottom:  0;
+	right: -100;
+	width: 100;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#95E4F4);
+}
+
+.btn-neo:hover #span3{
+	right: 100;
+	transition: 1s;
+}*/
+
+
+/*-------CARACTERÍSTICAS DEL MENÚ VERTICAL-----*/
+
+/*------------CONCEPTOS----*/
+
+div#centro1 h2{
+color:blue;
+margin-left: 35px;
+font-family: 'Arsenal', sans-serif;
+box-shadow: 10px 5px 5px black;
+width: 375px;
+/*box-shadow: 8px 8px 8px 8px rgba(255, 0, 255);*/ 
+}
+
+div#centro1 h2:hover{
+color:blue;
+transition: all.3s;
+/*text-decoration: underline red;*/
+
+}
+
+div#centro1 h3{
+color:blue;
+font-family: 'Arsenal', sans-serif;	
+margin-left: 35px;
+box-shadow: 10px 5px 5px black;
+width: 250px;
+}
+
+div#centro1 h3:hover{
+color:blue;
+transition: all.3s;
+/*text-decoration: underline red;*/
+
+}
+
+div#centro1 p{
+	margin-left: 35px;
+	font-size: 18px;
+	margin-right: 75px;
+	font-family: 'Arsenal', sans-serif;
+	
+}
+
+/*#centro1 {
+	background:#E2E9D7;
+	min-width: 400px;
+	margin-bottom: 0px;
+}*/
+
+
+
+#centro2 {
+	background:#E2E9D7;
+	margin-top: 40px;
+}
+
+
+#rueda {
+	margin-top: 30px;
+	background:#E2E9D7; 
+}
+
+#Juego1{
+	height: 100%;
+	padding-bottom: 100%;
+}
+
+#cuestionario{
+	width: 80%;
+	height: 1000px;
+	box-shadow: 10px 5px 5px black;
+}
+
+
+
+#pie a{
+	color:blue;
+}
+
+.btn-neo{
+	/*margin-top: 140px;*/
+	margin-left: 50px;
+	/*position: relative;*/
+	/*display: inline-block;*/
+	/*padding: 5px 10px;*/
+	color:white;
+	font-family: 'Arsenal', sans-serif;	
+	letter-spacing: 5px;
+	font-size: 34px;
+	text-decoration: none;
+	overflow: hidden;
+	transition: 0.2s;
+	
+}
+
+/* SECCIÓN*/
+
+.seccion1{
+	margin-top: 30px;
+	margin-left: -160px;
+	
+	width: 600px;
+	/*position: absolute;*/
+	box-shadow: 10px 5px 5px black;
+	
+}
+
+#span4{
+	text-emphasis:2;
+  	text-emphasis-color: aqua;
+    font-size:50px;
+    color:white;
+}
+
+.seccion1 iframe{
+	margin-left: -75px;
+	
+}
+
+.seccion2{
+	margin-top: 60px;
+	margin-left: 510px;
+	width: 800px;
+	position: fixed;
+	box-shadow: 10px 5px 5px black;
+}
+
+.seccion3 h4{
+	color:darkblue;
+	font-size: 20px;
+	margin-left: 35px;
+	margin-right: 75px;
+	font-family: 'Arsenal', sans-serif;
+	
+}
+
+.seccion4{
+	margin-top: 150px;
+	position: absolute;
+	margin-left: 50px;
+	width: 200px;
+	box-shadow: 10px 5px 5px black;
+}
+
+
+.seccion5{
+	margin-top: 150px;
+	position: absolute;
+	margin-left: 510px;
+	width: 200px;
+	box-shadow: 10px 5px 5px black;
+}
+
+.seccion7{
+	position:fixed;
+	
+	/*margin-left: 70px;*/
+	/*box-shadow: 10px 5px 5px black;*/
+	
+}
+
+.seccion8{
+	margin-top: 40px;
+	margin-left: 160px;
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	background: #E2E9D7;
+	box-shadow: 10px 5px 5px black;
+}
+
+.jugartopo{
+	margin-bottom: 35px;
+}
+
+.seccion8 a{
+	font-size: 25px;
+	border-radius: 10px;
+	padding: 5px 10px;
+	background: #1100ED;
+	color: yellow;
+	text-decoration: none;
+	
+}
+
+.seccion9 {
+	margin-top: -90px;
+	margin-left: 500px;
+	position: absolute;
+	width: 300px;
+	height: 250px;
+	background:#848484;
+	box-shadow: 10px 5px 5px black;
+}
+
+#id1{
+	margin-left: 55px;
+	width: 50%;
+}
+
+/*TABLA1*/
+
+
+
+@media(min-width:768px)
+{
+	#contenedor{
+		margin: auto;
+		width: 500px;
+		margin-top: 150px;
+		border-radius: 2%;
+	}
+	#nav{
+		margin: flex;
+		width: auto;
+		margin-top: auto;
+		position: fixed;
+		
+	}
+	.navegador{
+		/*margin: auto;
+		width: auto;
+		padding: inherit;
+		position: fixed;
+		*/
+		/*margin: auto;
+		width: 750px;*/
+		margin: auto;
+		width: 750px;
+		border-radius: 1%;
+	}
+	
+	#centro1{
+		margin:0 auto;
+		width: 750px;
+		margin-top: 20px;
+		border-radius: 3%; 
+	}
+	#centro2{
+		margin:0 auto;
+		width: 950px;
+		margin-top: 40px;
+		border-radius: 1%; 
+	}
+	
+	#tabla1 {
+	width: inherit;
+	/*margin-left: 35px;*/
+}
+}
+
+/*-----------------------*/
+
